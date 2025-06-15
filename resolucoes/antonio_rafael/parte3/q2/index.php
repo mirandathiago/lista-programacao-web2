@@ -6,7 +6,7 @@
     <title>Tabuada</title>
 </head>
 <body>
-    <form action = "receber.php" method = "post">
+    <form action = "resposta.php" method = "post">
         <label> Insira um número inteiro para mim mostrar a sua tabuada: 
             <input type = "number" placeholder = "Digite um número inteiro" name = "num">
         </label>
