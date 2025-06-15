@@ -8,16 +8,20 @@
 </head>
 <body>
 	<header>
-		<h1>Formulário de Contato</h1>
+		<h1>Descontos dos Produtos</h1>
 	</header>
 	<div class="container">
 		<div class="box resposta">
-			<h2>Resposta</h2>
-			<p>A resposta será exibida aqui.</p>
-			<p class="alerta-vermelho">Mensagem de alerta aqui</p>
-			<p class="alerta-verde">Mensagem de alerta aqui</p>
-			<p class="alerta-amarelo">Mensagem de alerta aqui</p>
-            <a href="" class="link">Voltar</a>
+			<h2>Valor com desconto:</h2>
+			<?php
+				if($_SERVER["REQUEST_METHOD"] == "POST"){
+					$valor = $_POST["valor"];
+					$resultado = $valor - (($valor / 100) * 10);
+					echo "<p class='alerta-vermelho'>Preço original: R$ $valor</p>";
+					echo "<p class='alerta-verde'>Preço com desconto: R$ $resultado</p>";
+				}
+        	?>
+            <a href="index.php" class="link">Voltar</a>
 		</div>
 	</div>
 </body>
