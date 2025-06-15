@@ -19,6 +19,7 @@
 					<input type="text" name="nome">
 					<button>Enviar</button>
 				</label>
+				<button name="enviar"> Enviar </button>
 			</form>
 		</div>
 		<div class="box resposta">
