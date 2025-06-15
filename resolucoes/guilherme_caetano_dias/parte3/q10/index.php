@@ -5,39 +5,44 @@
 	<title>Formulário</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<style>
+		.linha{
+			text-align: center;
+			color: green;
+		}
+	</style>
 </head>
 <body>
 	<header>
-		<h1>Questão 1 - P3 - Fatorial</h1>
+		<h1>Questão 10 - P3 - Padrão de Asrteriscos</h1>
 	</header>
 	<div class="container">
 		<div class="box formulario">
-			<h2>Escreva um número:</h2>
+			<h2>Altura da Árvore</h2>
 			<form action="index.php" method="post">
 				<label>
-					Número:
-					<input type="number" name="num">
+					Número de linhas:
+					<input type="number" name="linhas">
 				</label>
 				<button name="enviar"> Enviar </button>
 			</form>
 		</div>
 		<div class="box resposta">
-			<h2>Fatorial:</h2>
+			<h2>Árvore de asteriscos (*).</h2>
 			<?php
 				if($_SERVER['REQUEST_METHOD'] == 'POST'){
-					$num = $_POST['num'] ?? 0;
+					$linhas = $_POST['linhas'] ?? 0;
 
-					if($num != 0){
-						for($i = $num - 1; $i > 0; $i--){
-							$num = $num * $i;
+					for($i = 1; $i <= $linhas; $i++){
+						echo "<p class='linha'>";
+						for($j = 0; $j < $i; $j++){
+							echo "* ";
 						}
-						echo "<p class='alerta-verde'>O fatorial é $num.</p>";
-					}else{
-						echo "<p class='alerta-verde'>O fatorial é 1.</p>";
+						echo "</p>";
 					}
 				}
-        	?>
-			<a href="index.php" class="link">Voltar</a>
+			?>
+            <a href="index.php" class="link">Voltar</a>
 		</div>
 	</div>
 </body>

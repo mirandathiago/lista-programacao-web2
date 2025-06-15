@@ -21,7 +21,6 @@
 				<button name="enviar"> Enviar </button>
 			</form>
 		</div>
-		
 		<div class="box resposta">
 			<h2>Quantidade mínima de cédulas:</h2>
 			<?php
@@ -73,6 +72,7 @@
 					";
 				}
 			?>
+			<a href="index.php" class="link">Voltar</a>
 		</div>
 	</div>
 </body>

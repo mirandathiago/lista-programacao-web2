@@ -33,7 +33,7 @@
 			</form>
 		</div>
 		<div class="box resposta">
-			<h2>Resposta</h2>
+			<h2>Valor do frete:</h2>
 			<?php
 				if($_SERVER['REQUEST_METHOD'] == "POST"){
 					$regiao = $_POST['regiao'];
@@ -65,6 +65,7 @@
 					}
 				}
 			?>
+			<a href="index.php" class="link">Voltar</a>
 		</div>
 	</div>
 </body>
