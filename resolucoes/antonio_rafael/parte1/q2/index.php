@@ -6,7 +6,7 @@
     <title>Parte1_Questão02 - Dobro e a metade de un número X</title>
 </head>
 <body>
-    <form action = "receber.php" method = "post"> 
+    <form action = "resposta.php" method = "post"> 
           <label> Digite um número: 
 
             <input type = "number" placeholder = "Digite um número" name = "num1">
