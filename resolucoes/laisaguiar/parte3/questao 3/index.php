@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Informe o intervalo de números:</h2>
-    <form method="post" action="questao3.php">
+    <form method="post">
         <label >Início do intervalo:</label>
         <input type="number" name="inicio"><br><br>
         
