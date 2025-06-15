@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Formulário</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maior número e Menor número</title>
 </head>
 <body>
-	<header>
-		<h1>Parte 2 - Questão 1</h1>
-	</header>
-	<div class="container">
-		<div class="box formulario">
-			<h2>Qual é o menor número</h2>
-			<form action = "resposta.php" method = "post">
+	<form action = "resposta.php" method = "post">
 
-				<label>Número1:
-					<input type="number" name="num1" required>
-				</label>
+	<label> Digite o primeiro número: 
+	<input type="number" placeholder = "Digite o primeiro número" name = "num1" style = "width: 198px;">
+   </label>  <br>
 
-				<label>Número2:
-					<input type="number" name="num2" required>
-				</label>
+   <label> Digite o segundo número: 
+	<input type="number" placeholder = "Digite o segundo número" name = "num2" style = "width: 200px;">
+   </label> <br>
 
-				<label>Número3:
-					<input type="number" name="num3" required>
-				</label>
+    <label> Digite o terceiro número: 
+	<input type="number" placeholder = "Digite o terceiro número" name = "num3" style = "width: 200px;">
+   </label> 
 
-
-				
-
-				<button name="enviar"> Enviar </button>
-			</form>
-		</div>		
-	</div>
+  <button> Verificar </button>
+    </form>
 </body>
 </html>
