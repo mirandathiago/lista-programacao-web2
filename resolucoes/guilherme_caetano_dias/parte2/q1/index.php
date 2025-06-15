@@ -12,7 +12,7 @@
 	</header>
 	<div class="container">
 		<div class="box formulario">
-			<h2>Crie um formulário com três campos do tipo number e um botão, em seguida utilizando uma estrutura condicional verifique qual o maior número e qual o menor número e mostre essa informação na tela.</h2> <!-- Pode alterar esse h2. -->
+			<h2>Insira três valores nos campos:</h2> <!-- Pode alterar esse h2. -->
 			<form action="resposta.php" method="post"> <!-- Colocar a ação e o metodo. Além disso, pode deletar todo o conteúdo dentro do formulário, exceto o butão. -->
 				<label> 
 					Insira o primeiro valor:

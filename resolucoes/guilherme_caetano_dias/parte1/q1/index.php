@@ -12,7 +12,7 @@
 	</header>
 	<div class="container">
 		<div class="box formulario">
-			<h2>Pedro precisa calcular o preço de um produto com um desconto de 10%. Crie um formulário que receba o preço original do produto e calcule o preço final com o desconto aplicado.</h2>
+			<h2>Insira o valor do produto:</h2>
 			<form action="resposta.php" method="post">
 				<label>
 					Insira um valor do produto:
