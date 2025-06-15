@@ -8,11 +8,11 @@
 </head>
 <body>
 	<header>
-		<h1>Parte 2 - Questão 1</h1> <!-- Pode alterar esse h1. -->
-	</header>
+		<h1>Questão 1 - P2 - Número Maior e Menor</h1> <!-- Pode alterar esse h1. -->
+	</header> 
 	<div class="container">
 		<div class="box resposta">
-			<h2>Resposta</h2> <!-- Pode deletar todos os parágrafos. -->
+			<h2>O maior número e o menor número respectivamente:</h2> <!-- Pode deletar todos os parágrafos. -->
 			<?php
 				if($_SERVER['REQUEST_METHOD'] == 'POST'){
 					$num1 = $_POST['num1'] ?? 0;
@@ -20,25 +20,25 @@
 					$num3 = $_POST['num3'] ?? 0;
 
 					if($num1 > $num2 && $num1 > $num3){
-						echo "<p class='alerta-verde'>O 1º Número: $num1, é o maior.</p>";
-						if($num2 < $num3){
-							echo "<p class='alerta-amarelo'>O 2º Número: $num2, é o menor.</p>";
+                    	echo "<p class='alerta-verde'>Maior número: $num1</p>";
+						if($num2 > $num3){
+							echo "<p class='alerta-vermelho'>Menor número: $num3</p>";
 						}else{
-							echo "<p class='alerta-amarelo'>O 3º Número: $num3, é o menor.</p>";
+							echo "<p class='alerta-vermelho'>Menor número: $num2</p>";
 						}
-					}elseif($num2 > $num1 && $num2 > $num3){
-						echo "<p class='alerta-verde'>O 2º Número: $num2, é o maior.</p>";
-						if($num1 < $num3){
-							echo "<p class='alerta-amarelo'>O 1º Número: $num1, é o menor.</p>";
+					}else if($num2 > $num1 && $num1 > $num3){
+						echo "<p class='alerta-verde'>Maior número: $num2</p>";
+						if($num1 > $num3){
+							echo "<p class='alerta-vermelho'>Menor número: $num3</p>";
 						}else{
-							echo "<p class='alerta-amarelo'>O 3º Número: $num3, é o menor.</p>";
+							echo "<p class='alerta-vermelho'>Menor número: $num1</p>";
 						}
-					}else{
-						echo "<p class='alerta-verde'>O 3º Número: $num3, é o maior.</p>";
-						if($num1 < $num2){
-							echo "<p class='alerta-amarelo'>O 1º Número: $num1, é o menor.</p>";
+					}else if($num3 > $num2 && $num3 > $num2){
+						echo "<p class='alerta-verde'>Maior número: $num3</p>";
+						if($num2 > $num1){
+							echo "<p class='alerta-vermelho'>Menor número: $num1</p>";
 						}else{
-							echo "<p class='alerta-amarelo'>O 2º Número: $num2, é o menor.</p>";
+							echo "<p class='alerta-vermelho'>Menor número: $num2</p>";
 						}
 					}
 				}

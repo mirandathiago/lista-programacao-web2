@@ -8,23 +8,23 @@
 </head>
 <body>
 	<header>
-		<h1>Parte 2 - Questão 1</h1> <!-- Pode alterar esse h1. -->
+		<h1>Questão 1 - P2 - Número Maior e Menor</h1> <!-- Pode alterar esse h1. -->
 	</header>
 	<div class="container">
 		<div class="box formulario">
-			<h2>Parte 2 - Questão 1</h2> <!-- Pode alterar esse h2. -->
+			<h2>Crie um formulário com três campos do tipo number e um botão, em seguida utilizando uma estrutura condicional verifique qual o maior número e qual o menor número e mostre essa informação na tela.</h2> <!-- Pode alterar esse h2. -->
 			<form action="resposta.php" method="post"> <!-- Colocar a ação e o metodo. Além disso, pode deletar todo o conteúdo dentro do formulário, exceto o butão. -->
-				<label>
-					Numero 1:
-					<input type="number" name="num1" required>
+				<label> 
+					Insira o primeiro valor:
+					<input type="number" name="num1">
 				</label>
 				<label>
-					Numero 2:
-					<input type="number" name="num2" required>
+					Insira o segundo valor:
+					<input type="number" name="num2">
 				</label>
 				<label>
-					Numero 3:
-					<input type="number" name="num3" required>
+					Insira o terceiro valor:
+					<input type="number" name="num3">
 				</label>
 				<button name="enviar"> Enviar </button> <!-- Não deletar esse butão. -->
 			</form>
