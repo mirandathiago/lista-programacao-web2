@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<h1>Par ou Ímpar</h1>
+		<h1>Local</h1>
 	</header>
 	<div class="container">
 		<div class="box resposta">
@@ -38,7 +38,7 @@
                         case "tempestuoso":
                             echo "<p>Fique em casa!</p>";
                         break;
-                        
+
                         default:
                             echo "<p>Clima inválido!</p>";
                         }
