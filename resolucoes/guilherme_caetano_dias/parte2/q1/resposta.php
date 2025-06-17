@@ -26,7 +26,7 @@
 						}else{
 							echo "<p class='alerta-vermelho'>Menor número: $num2</p>";
 						}
-					}else if($num2 > $num1 && $num1 > $num3){
+					}else if($num2 > $num1 && $num2 > $num3){
 						echo "<p class='alerta-verde'>Maior número: $num2</p>";
 						if($num1 > $num3){
 							echo "<p class='alerta-vermelho'>Menor número: $num3</p>";

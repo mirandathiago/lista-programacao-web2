@@ -17,7 +17,6 @@
 				<label>
 					Nome:
 					<input type="text" name="nome">
-					<button>Enviar</button>
 				</label>
 				<button name="enviar"> Enviar </button>
 			</form>
@@ -36,7 +35,7 @@
 					}else if($hora >= 18 && $hora < 23){
 						echo "<p class='alerta-verde'>Boa noite, $nome!</p>";
 					}else{
-						echo "<p class='alerta-vermelho'>Vá dormir, está de madrugada.";
+						echo "<p class='alerta-vermelho'>Vá dormir, está de madrugada.</p>";
 					}
 				}
         	?>

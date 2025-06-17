@@ -16,10 +16,10 @@
 			<form action="resposta.php" method="post">
 				<label>
 					Insira um valor do produto:
-					<input type="number" name="valor" step="0.1">
+					<input type="number" name="valor" step="0.01">
 				</label>
+				<button name="enviar"> Enviar </button>
     		</form>
-			<button name="enviar"> Enviar </button>
 		</div>		
 	</div>
 </body>

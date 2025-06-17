@@ -8,11 +8,11 @@
 </head>
 <body>
 	<header>
-		<h1>Formulário de Contato</h1>
+		<h1>Questão 14 - P2 - Frete</h1>
 	</header>
 	<div class="container">
 		<div class="box formulario">
-			<h2>Entre em contato</h2>
+			<h2>Insira as Informações:</h2>
 			<form action="index.php" method="POST">
 				<label>
 					Região:
@@ -27,7 +27,7 @@
 				</label>
 				<label>
 					Peso:
-					<input type="number" name="peso" setp="0.1" placeholder="Insira o peso do pacote.">
+					<input type="number" name="peso" step="0.1" placeholder="Insira o peso do pacote.">
 				</label>
 				<button name="enviar"> Enviar </button>
 			</form>

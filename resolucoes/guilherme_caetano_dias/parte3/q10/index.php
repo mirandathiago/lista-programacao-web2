@@ -18,7 +18,7 @@
 	</header>
 	<div class="container">
 		<div class="box formulario">
-			<h2>Altura da Árvore</h2>
+			<h2>Altura do Padrão:</h2>
 			<form action="index.php" method="post">
 				<label>
 					Número de linhas:

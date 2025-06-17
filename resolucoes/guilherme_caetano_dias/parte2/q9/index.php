@@ -15,6 +15,7 @@
 			<h2>Escolha um clima:</h2>
 			<form action="index.php" method="post">
 				<label>
+					Selecione o Clima:
 					<select name="clima">
 						<option></option>
 						<option value="ensolarado">Ensolarado</option>
@@ -31,7 +32,7 @@
 			<h2>Sugestão:</h2>
 			<?php
 				if($_SERVER['REQUEST_METHOD'] == "POST"){
-					$clima = $_POST['clima'];
+					$clima = $_POST['clima'] ?? "";
 
 					switch($clima){
 						case "ensolarado":
