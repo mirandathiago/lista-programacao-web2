@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Formulário</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação do maior e menor número</title>
 </head>
 <body>
-	<header>
-		<h1>Parte 2 - Questão 1</h1>
-	</header>
-	<div class="container">
-		<div class="box formulario">
-			<h2>Qual é o menor número?</h2>
-			<form action="resposta.php" method="post">
-				<label>Numero 1:
-					<input type="number" name="num1" required>
-				</label>
-				<label>Numero 2:
-					<input type="number" name="num2" required>
-				</label>
-				<label>Numero 3:
-					<input type="number" name="num3" required>
-				</label>
- 
-				<button name="enviar"> Enviar </button>
-			</form>
-		</div>		
-	</div>
+    <form action="index.php" method="post">
+        <label> Número 1:
+            <input type="number" name="num1">
+        </label>
+        <label> Número 2:
+            <input type="number" name="num2">
+        </label>
+        <label> Número 3:
+            <input type="number" name="num3">
+        </label>
+        <button>Verificar</button>
+    </form>
+    <div>
+        <?php 
+        $metodo = $_SERVER['REQUEST_METHOD'];
+        if($metodo == "POST"){
+            $num1 = $_POST['num1'] ?? 0;
+            $num2 = $_POST['num2'] ?? 0;
+            $num3 = $_POST['num3'] ?? 0;
+
+            if($num1 > $num2 && $num1 > $num3){
+                echo "<h3> O maior número é o primeiro: $num1</h3>";
+            }else if($num2 > $num1 && $num2 >$num3){
+                echo "<h3> O maior número é o segundo: $num2</h3>";
+            }else{
+                echo "<h3> O maior número é o terceiro: $num3</h3>";
+            }
+            
+             if($num1 < $num2 && $num1 < $num3){
+                echo "<h3> O menor número é o primeiro: $num1</h3>";
+            }else if($num2 < $num1 && $num2 < $num3){
+                echo "<h3> O menor número é o segundo: $num2</h3>";
+            }else{
+                echo "<h3> O menor número é o terceiro: $num3</h3>";
+            }
+        }
+        ?>
+    </div>
 </body>
 </html>
